@@ -14,4 +14,7 @@ df_brasil_india_usa = df.query('location == "INDIA" or location== "BRAZIL"or loc
 fig4=px.pie(df_brasil_india_usa, values='people_fully_vaccinated', names='location', title='Pessoas totalmente Vacinadas no Brasil, India e USA')
 fig4.show()
 
+st.plotly_chart(fig1, use_container_width=True)
+st.plotly_chart(fig4, use_container_width=True)
+
 st.set_page_config(page_title="DashCovid",layout="wide")
