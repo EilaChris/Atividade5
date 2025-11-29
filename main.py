@@ -4,6 +4,8 @@ import streamlit as st
 
 df=pd.read_csv('vacinacao_corrigido.csv')
 
+st.title('Vacina Covid')
+
 
 fig1=px.line(df, x='date', y='total_vaccinations', color='location', title='Números total de Vacinados')
 fig1.update_layout(xaxis_title='Data',yaxis_title='Número total de Vacinados')
